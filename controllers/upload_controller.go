@@ -93,7 +93,7 @@ func UploadImage(c *gin.Context) {
 	}
 
 	// 返回 WebP 文件的 URL
-	imageURL := fmt.Sprintf("http://192.168.3.222:8080/i/%s/%s/%s/%s", year, month, day, webpFileName)
+	imageURL := fmt.Sprintf("%s/i/%s/%s/%s/%s", config.Data.Domain, year, month, day, webpFileName)
 	c.JSON(http.StatusOK, gin.H{"result": "success", "code": http.StatusOK, "url": imageURL})
 }
 

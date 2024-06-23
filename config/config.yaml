@@ -1,3 +1,4 @@
+Domain: "https://xxxx.com"
 port: 8080
 auth:
   token: meowrain # demo

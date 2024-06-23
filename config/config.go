@@ -9,8 +9,9 @@ import (
 )
 
 type Config struct {
-	Port string `yaml:"port"`
-	Auth struct {
+	Domain string `yaml:"domain"`
+	Port   string `yaml:"port"`
+	Auth   struct {
 		Token string `yaml:"token"`
 	} `yaml:"auth"`
 }
